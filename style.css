@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+:root {
+    --darkblue: #2A324B;
+    --blue: #58699D;
+    --lightblue: #E1E5EE;
+    --white: #fff;
+
+    --font: 'Montserrat', sans-serif;
+    --rootsize: 20px;
+    --maxsize: 1200px;
+}
+
+
+body {
+    display: flex;
+    background-color: #E1E5EE;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+}
+#container {
+    width: 1100px;
+    padding-top: 5rem;
+}
+
+#tab_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tab_buttons button {
+    border: none;
+    color: var(--white);
+    background-color: var(--darkblue);
+    height: 5rem;
+    width: auto;
+    padding: 0 3rem;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#tabs {
+    background-color: var(--white);
+    padding: 5rem;
+}
+
+#tabs h2 {
+    color: var(--darkblue);
+}
+
+#tabs .tabContent {
+    display: none;
+}
+
+#tab_buttons button:hover {
+    background-color: var(--blue);
+}
+
+#tab_buttons button.tab.active {
+    background-color: var(--white);
+    color: var(--darkblue);
+
+}
